@@ -1,0 +1,174 @@
+<p>SURYAs</p>
+<mat-sidenav-container class="example-container">
+  <mat-sidenav mode="side" style="background-color:black;color:white;padding:5px;" opened>My App
+	<mat-grid-list cols="1" ><br>
+	  <mat-grid-tile><img src="assets/dashboard (5) 1.svg"/></mat-grid-tile><br>
+	  <mat-grid-tile style="background-color:white;"><img src="assets/Group (4).svg"/></mat-grid-tile><br>
+	  <mat-grid-tile><img src="assets/business-report-with-growth (1) 1.svg"/></mat-grid-tile><br>
+	  <mat-grid-tile><img src="assets/settings (2) 1.svg"/></mat-grid-tile><br>
+	  <mat-grid-tile style="bottom: -110px;"><img src="assets/user 2.svg"/></mat-grid-tile><br>
+	  <mat-grid-tile style="bottom: -180px;"><img (click)="logout()" src="assets/logout-button 1.svg"/></mat-grid-tile>
+	  <mat-grid-tile style="bottom: -210px;"><span style="font-size: 13px;">Log Out</span></mat-grid-tile>
+	</mat-grid-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+	<mat-toolbar>
+		<span><span><img style="width:20px;" src="assets/back_arrow.png"/></span><span style="margin-left:20px;">Anna Kowalska</span></span>
+		<span style="right:6%;position:absolute;">
+			<section>
+			  <div class="example-label">Document id: <span style="color:#21b371;font-size:15px;"><b>ASWQ-33432-OORM-1123-MKO23</b></span><span>&nbsp;</span></div>&nbsp;
+			  <div class="example-button-row1">
+				<button mat-raised-button color="primary" class="cus_btn">More Info</button>
+				<button mat-raised-button color="primary" (click)="scan_history()" class="cus_btn">Scan History</button>
+			  </div>
+			</section>
+		</span>
+	</mat-toolbar>
+	<mat-grid-list cols="3" >
+		<mat-grid-tile>
+			<div class="example-container" style="padding:50px;text-align:center;">
+			<br>
+			<mat-form-field appearance="fill">
+			  <mat-label>ID Type</mat-label>
+			  <mat-select>
+				<mat-option value="one">First option</mat-option>
+				<mat-option value="two">Second option</mat-option>
+			  </mat-select>
+			</mat-form-field>
+			
+			<mat-form-field appearance="outline">
+				<mat-label>ID Number</mat-label>
+				<input matInput placeholder="0123">
+				<!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+				<!-- <mat-hint>Hint</mat-hint> -->
+			</mat-form-field>
+			
+			<mat-form-field appearance="outline">
+				<mat-label>First Name</mat-label>
+				<input matInput placeholder="Surya">
+				<!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+				<!-- <mat-hint>Hint</mat-hint> -->
+			</mat-form-field>
+			
+			<mat-form-field appearance="outline">
+				<mat-label>Last Name</mat-label>
+				<input matInput placeholder="Kumar">
+				<!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+				<!-- <mat-hint>Hint</mat-hint> -->
+			</mat-form-field>
+			
+			<mat-form-field appearance="fill">
+			  <mat-label>Date Of Birth</mat-label>
+			  <input matInput [matDatepicker]="picker">
+			  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+			  <mat-datepicker #picker></mat-datepicker>
+			</mat-form-field>
+			
+			<mat-form-field appearance="fill">
+			  <mat-label>ID Expiry</mat-label>
+			  <input matInput [matDatepicker]="pickers">
+			  <mat-datepicker-toggle matSuffix [for]="pickers"></mat-datepicker-toggle>
+			  <mat-datepicker #pickers></mat-datepicker>
+			</mat-form-field>
+			<br><br>
+			<section>
+			  <!-- <div class="example-label"></div> -->
+			  <div class="example-button-row">
+				<button mat-raised-button>Cancel</button>
+				<button mat-raised-button color="primary" style="background-color:#21b371;">Save</button>
+			  </div>
+			</section>
+			</div>
+	  </mat-grid-tile>
+	  <mat-grid-tile style="background-color:#eee;">2</mat-grid-tile>
+	  <mat-grid-tile>
+	  
+		<div class="example-container" style="padding:50px;">
+			<!-- <br> -->
+			<mat-grid-list cols="2" >
+			  <mat-accordion>
+				
+				  <mat-expansion-panel hideToggle>
+				
+					<mat-expansion-panel-header>
+					  <mat-panel-title>Scan ID</mat-panel-title>
+					  <mat-panel-description><b>877372019</b></mat-panel-description>
+					</mat-expansion-panel-header><br><br>
+					<mat-expansion-panel-header>
+					  <mat-panel-title>Submitted Time</mat-panel-title>
+					  <mat-panel-description><b>10:12:34</b></mat-panel-description>
+					</mat-expansion-panel-header><br><br>
+					<mat-expansion-panel-header>
+					  <mat-panel-title>Device Signature</mat-panel-title>
+					  <mat-panel-description><b>Chrome</b></mat-panel-description>
+					</mat-expansion-panel-header><br><br>
+					<mat-expansion-panel-header>
+					  <mat-panel-title>IP Address</mat-panel-title>
+					  <mat-panel-description><b>192.32.09.3</b></mat-panel-description>
+					</mat-expansion-panel-header><br><br>
+					<mat-expansion-panel-header>
+					  <mat-panel-title>Mode</mat-panel-title>
+					  <mat-panel-description><b>Sandbox</b></mat-panel-description>
+					</mat-expansion-panel-header>
+					
+				  </mat-expansion-panel>
+				  
+				</mat-accordion>
+			</mat-grid-list>
+			<br>
+			<section style="text-align:center;">
+			  <div class="example-button-row">
+				<button mat-raised-button color="accent">Delete</button>
+			  </div>
+			</section>
+			<hr>
+			
+			<mat-grid-list cols="2" >
+			  <mat-accordion>
+				
+				  <mat-expansion-panel hideToggle>
+					<h5>Scan Result</h5>
+					<mat-expansion-panel-header>
+					  <mat-panel-title>Status</mat-panel-title>
+					  <mat-panel-description><b>Submitted</b></mat-panel-description>
+					</mat-expansion-panel-header><br><br>
+					<mat-expansion-panel-header>
+					  <mat-panel-title>ID Card</mat-panel-title>
+					  <mat-panel-description><b>N/A</b></mat-panel-description>
+					</mat-expansion-panel-header><br><br>
+					<mat-expansion-panel-header>
+					  <mat-panel-title>Address</mat-panel-title>
+					  <mat-panel-description><b>N/A</b></mat-panel-description>
+					</mat-expansion-panel-header><br><br>
+					<mat-expansion-panel-header>
+					  <mat-panel-title>Live Check</mat-panel-title>
+					  <mat-panel-description><b>N/A</b></mat-panel-description>
+					</mat-expansion-panel-header>
+					
+				  </mat-expansion-panel>
+				  
+				</mat-accordion>
+			</mat-grid-list>
+			<br>
+			<section style="text-align:center;">
+			  <div class="example-button-row">
+				<button mat-raised-button>Edit</button>
+				<button mat-raised-button color="primary" style="background-color:#21b371;">Download</button>
+			  </div>
+			</section>
+			
+			</div>
+			
+			<hr>
+			
+			
+			
+	  </mat-grid-tile>
+	</mat-grid-list>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+
+  
+  
+

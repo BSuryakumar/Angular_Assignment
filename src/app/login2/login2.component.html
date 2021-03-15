@@ -1,0 +1,43 @@
+<mat-grid-list cols="2">
+<!-- rowHeight="2:1" -->
+  <mat-grid-tile><img src="assets/Group 235.png" style="width:90%;"/></mat-grid-tile>
+  <mat-grid-tile style="background-color:white;">
+  <div class="example-container" style="width:320px;text-align:center;">
+		<h6 class="welcome">FlexVerify</h6><br>
+		<!-- <mat-slider min="1" max="100" step="1" value="1"></mat-slider> -->
+		<h5 class="welcome">Welcome</h5><br>
+		<mat-form-field appearance="fill" style="display: block; margin-bottom: 10px;">
+			<mat-label>Enter your email</mat-label>
+			<input matInput placeholder="pat@example.com" [formControl]="email" id="emaill" name="emaill" required>
+			<mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+		</mat-form-field>
+
+		<mat-form-field appearance="fill" style="display: contents;">
+			<mat-label>Enter your password</mat-label>
+			<input matInput [type]="hide ? 'password' : 'text'" id="password" name="password">
+			<button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+			<mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+			</button>
+		</mat-form-field>
+		
+		<mat-grid-list cols="2">
+			<section class="example-section" style="text-align:left;">
+			  <mat-checkbox class="example-margin">Remember me!</mat-checkbox>
+			  <span class="example-margin" style="right: 0%; position: absolute;">Forgot Password ?</span>
+			</section>
+		</mat-grid-list>
+		
+		<mat-grid-list cols="2">
+		<section>
+		<mat-grid-tile class="mad"></mat-grid-tile>
+		<mat-grid-tile class="mad">
+		<div class="example-button-row">
+			<button mat-raised-button (click)="submit()" id="login_btn" color="primary">Login</button>
+		</div>
+		</mat-grid-tile>
+		</section>
+		</mat-grid-list>
+
+	</div>
+  </mat-grid-tile>
+</mat-grid-list>

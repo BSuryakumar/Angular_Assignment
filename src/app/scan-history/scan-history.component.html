@@ -1,0 +1,63 @@
+<p>SURYAs</p>
+<mat-sidenav-container class="example-container">
+  <mat-sidenav mode="side" style="background-color:black;color:white;padding:5px;" opened>My App
+	<mat-grid-list cols="1" ><br>
+	  <mat-grid-tile><img src="assets/dashboard (5) 1.svg"/></mat-grid-tile><br>
+	  <mat-grid-tile style="background-color:white;"><img src="assets/Group (4).svg"/></mat-grid-tile><br>
+	  <mat-grid-tile><img src="assets/business-report-with-growth (1) 1.svg"/></mat-grid-tile><br>
+	  <mat-grid-tile><img src="assets/settings (2) 1.svg"/></mat-grid-tile><br>
+	  <mat-grid-tile style="bottom: -110px;"><img src="assets/user 2.svg"/></mat-grid-tile><br>
+	  <mat-grid-tile style="bottom: -180px;"><img (click)="logout()" src="assets/logout-button 1.svg"/></mat-grid-tile>
+	  <mat-grid-tile style="bottom: -210px;"><span style="font-size: 13px;">Log Out</span></mat-grid-tile>
+	</mat-grid-list>
+  </mat-sidenav>
+  <mat-sidenav-content style="background-color:#edebeb;">
+	<mat-toolbar>
+		<span><span><img style="width:20px;" src="assets/back_arrow.png"/></span><span style="margin-left:20px;">Anna Kowalska</span></span>
+		<span style="right:6%;position:absolute;">
+			<section>
+			  <div class="example-label">Document id: <span style="color:#21b371;font-size:15px;"><b>ASWQ-33432-OORM-1123-MKO23</b></span><span>&nbsp;</span></div>&nbsp;
+			  <div class="example-button-row1">
+				<button mat-raised-button color="primary" class="cus_btn">More Info</button>
+				<button mat-raised-button color="primary" class="cus_btn">Scan History</button>
+			  </div>
+			</section>
+		</span>
+	</mat-toolbar><br>
+
+<div class="container" *ngFor="let x of array">
+<mat-accordion>
+  <mat-expansion-panel hideToggle>
+    <mat-expansion-panel-header>
+      <mat-panel-title style="margin-right: 0px;">Document ID</mat-panel-title>
+       <mat-panel-title style="margin-right: 0px;">Created On</mat-panel-title>
+       <mat-panel-title style="margin-right: 0px;">Name</mat-panel-title>
+       <mat-panel-title style="margin-right: 0px;">Tenant</mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-expansion-panel-header>
+     <mat-panel-description>0987654321</mat-panel-description>
+      <mat-panel-description style="margin-right: 0px;">13/03/2021</mat-panel-description>
+      <mat-panel-description style="margin-right: 0px;">Surya</mat-panel-description>
+      <mat-panel-description>HDFC</mat-panel-description>
+    </mat-expansion-panel-header>
+    <mat-expansion-panel-header>
+      <mat-panel-title style="margin-right: 32px;">Scan ID</mat-panel-title>
+       <mat-panel-title style="margin-right: 0px;">Created Time</mat-panel-title>
+       <mat-panel-title style="margin-right: 0px;">Nationality</mat-panel-title>
+       <mat-panel-title>Status</mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-expansion-panel-header>
+     <mat-panel-description style="margin-right: 0px;">0987654321</mat-panel-description>
+      <mat-panel-description style="margin-left: 30px;">05:20:10&nbsp;</mat-panel-description>
+      <mat-panel-description style="margin-right: 0px;">India</mat-panel-description>
+      <mat-panel-description>
+	  <div style="border: 2px solid orange;background-color: #e7b75f9e;color: white;">InProgress</div>
+	  </mat-panel-description>
+    </mat-expansion-panel-header>
+  </mat-expansion-panel>
+</mat-accordion>
+<!-- <br> -->
+</div>
+
+  </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,0 +1,24 @@
+mat-grid-tile {
+  background: #e1f1f6;
+}
+
+h5 {
+	font-size:24px;
+}
+  
+ h6 {
+    font-size:36px;
+  }
+
+.welcome{
+	text-align:left;
+}
+
+.mad{
+	background: white;
+}
+
+#login_btn{
+	width:150%;
+	background-color:#21b371;
+}
